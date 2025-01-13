@@ -22,13 +22,23 @@ git = "https://github.com/aptos-labs/aptos-core.git"
 rev = "mainnet"
 subdir = "aptos-move/framework/aptos-framework"
 
+# [dependencies.AptosExtensions]
+# local = "../../stablecoin-aptos/packages/aptos_extensions"
+
 [dependencies.AptosExtensions]
-local = "../../stablecoin-aptos/packages/aptos_extensions"
+git = "https://github.com/circlefin/stablecoin-aptos"
+rev = "c5f24d06ad0aebd9f61456da0c036be911da97c4"
+subdir = "packages/aptos_extensions"
 
 [dependencies.MessageTransmitter]
 local = "../message_transmitter"
 
+# [dependencies.Stablecoin]
+# local = "../../stablecoin-aptos/packages/stablecoin"
+
 [dependencies.Stablecoin]
-local = "../../stablecoin-aptos/packages/stablecoin"
+git = "https://github.com/circlefin/stablecoin-aptos"
+rev = "c5f24d06ad0aebd9f61456da0c036be911da97c4"
+subdir = "packages/stablecoin"
 
 [dev-dependencies]
